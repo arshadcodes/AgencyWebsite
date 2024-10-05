@@ -16,8 +16,8 @@ const Footer = () => {
                         We&#39;re a software agency on a mission to bridge a gap between Marketplace Businesses and Innovation through custom software and automations.
                     </p>
                     <div className="my-4">Email - contact@egma.in</div>
-                    <i className="fa-brands fa-linkedin text-4xl mr-4"></i>
-                    <i className="fa-brands fa-square-instagram text-4xl"></i>
+                    <i className="fa-brands fa-linkedin text-4xl mr-4  transform transition-transform duration-300 hover:scale-105"></i>
+                    <i className="fa-brands fa-square-instagram text-4xl  transform transition-transform duration-300 hover:scale-105"></i>
                 </div>
                 <div>
                     <ul className="list-none pl-36">

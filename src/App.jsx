@@ -1,7 +1,7 @@
 import Footer from "./components/footer"
 import HowThingsWork from "./components/how things work"
 import Main from "./components/main"
-import Navbar from "./components/navbar"
+import Navbar from "./components/Navbar"
 import OurWork from "./components/our work"
 
 function App() {

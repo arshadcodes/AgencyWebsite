@@ -14,11 +14,11 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center flex-1">
                 {links.map(link => (
-                    <a href="#" key={link.name} className="text-xl mx-4">{link.name}</a>
+                    <a href="#" key={link.name} className="text-xl mx-4  transform transition-transform duration-300 hover:scale-105 ease-in-out hover:font-bold">{link.name}</a>
                 ))}
             </div>
             <div className="flex justify-end flex-1">
-                <button className="border border-black rounded-full px-4 py-2 shadow-xl font-thin">
+                <button className="border border-black rounded-full px-4 py-2 shadow-xl font-thin transform transition-transform duration-300 hover:scale-105">
                     Get a free estimate
                 </button>
             </div>
