@@ -21,9 +21,6 @@ This project is participating in **Hacktoberfest 2024**! Contributions are welco
 
 ---
 
-## 🌐 Live Demo
-[**Check it out here**](https://your-live-demo-url.com)
-
 ---
 
 ## 🚀 Tech Stack
