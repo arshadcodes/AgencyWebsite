@@ -4,7 +4,7 @@
 [![Stars](https://img.shields.io/github/stars/arshadcodes/agencyWebsite)](https://github.com/arshadcodes/agencyWebsite/stargazers)
 [![Forks](https://img.shields.io/github/forks/arshadcodes/agencyWebsite)](https://github.com/arshadcodes/agencyWebsite/network/members)
 
-A visually striking **agency website** built with **React** and enhanced with **3D elements**, designed for modern digital agencies.
+A visually striking **agency website** built with **React**, **Vite**, and enhanced with **3D elements**, designed for modern digital agencies.
 
 ---
 
@@ -28,13 +28,14 @@ This project is participating in **Hacktoberfest 2024**! Contributions are welco
 
 ## 🚀 Tech Stack
 
-| Technology         | Description                                 |
-|--------------------|---------------------------------------------|
-| **React**          | Library for building interactive UIs        |
-| **Three.js**       | 3D models and animations                    |
-| **JavaScript (ES6)**| For writing modular, clean code             |
-| **HTML5 & CSS3**   | Structure and styling                       |
-| **Node.js & NPM**  | Backend tooling and package management      |
+| Technology           | Description                                 |
+| -------------------- | ------------------------------------------- |
+| **React**            | Library for building interactive UIs        |
+| **Vite**             | Fast, modern build tool for web development |
+| **Three.js**         | 3D models and animations                    |
+| **JavaScript (ES6)** | For writing modular, clean code             |
+| **HTML5 & CSS3**     | Structure and styling                       |
+| **Node.js & NPM**    | Backend tooling and package management      |
 
 ---
 
@@ -65,13 +66,13 @@ To get a local copy up and running, follow these simple steps:
     npm install
     ```
 
-5. **Start the development server**:
+5. **Start the development server using Vite**:
     ```bash
     npm run dev
     ```
 
 6. **Access the project**:
-    Open your browser and navigate to `http://localhost:xxxx`
+    Open your browser and navigate to `http://localhost:3000`
 
 ---
 
@@ -104,6 +105,8 @@ To contribute, follow these steps:
     ```
 6. Create a **Pull Request** on GitHub.
 
+For more details on how to contribute, please check out our [**CONTRIBUTING.md**](https://github.com/arshadcodes/agencyWebsite/CONTRIBUTING.md).
+
 We will review your PR and provide feedback if necessary.
 
 ---
@@ -112,7 +115,19 @@ We will review your PR and provide feedback if necessary.
 
 - **Arshad**  
   **GitHub**: [@arshadcodes](https://github.com/arshadcodes)  
-  Passionate about modern **web development, open source**, and mentoring **new developers**
+  Passionate about modern web development, open source, and mentoring new developers.
 
 ---
 
+## 🤝 Join the Hacktoberfest Community
+
+### Tips for a Successful Contribution
+
+- Start with smaller issues if you're new to the codebase.
+- Always include a detailed description in your pull request.
+- Check for any existing issues before creating a new one.
+- Be kind, respectful, and supportive of others in the community.
+
+**Happy Hacking! 🎃**
+
+---
