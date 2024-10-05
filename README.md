@@ -105,7 +105,7 @@ To contribute, follow these steps:
     ```
 6. Create a **Pull Request** on GitHub.
 
-For more details on how to contribute, please check out our [**CONTRIBUTING.md**](https://github.com/arshadcodes/agencyWebsite/CONTRIBUTING.md).
+For more details on how to contribute, please check out our [**CONTRIBUTING.md**](https://github.com/arshadcodes/agencyWebsite/blob/main/CONTRIBUTING.md).
 
 We will review your PR and provide feedback if necessary.
 
