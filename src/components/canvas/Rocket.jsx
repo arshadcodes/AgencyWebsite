@@ -1,5 +1,6 @@
+
 import { Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { useRef } from "react";
 
@@ -8,19 +9,12 @@ import CanvasLoader from "../Loader";
 const Rocket = () => {
   const rocket = useGLTF("/rocket/untitled.gltf");
 
-  // Reference to the rocket model for rotation
+  // Reference to the rocket model
   const rocketRef = useRef();
-
-  // useFrame hook to rotate the rocket on its Y-axis
-  useFrame(() => {
-    if (rocketRef.current) {
-      rocketRef.current.rotation.y += 0.001; // Adjust the speed of rotation here
-    }
-  });
 
   return (
     <mesh>
-<hemisphereLight intensity={1} groundColor='black' />
+      <hemisphereLight intensity={1} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -29,11 +23,16 @@ const Rocket = () => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={3}/>
-    <primitive ref={rocketRef} object={rocket.scene} scale={0.02} position={[1, 0.2, -2]} rotation={[0,0, Math.PI / 2]}/>
+      <pointLight intensity={3} />
+      {/* Keeping the rocket centered, upright, and facing front */}
+      <primitive
+        ref={rocketRef}
+        object={rocket.scene}
+        scale={0.020} // Smaller scale for the rocket
+        position={[-2,-0.5, -1]} // Centered on the X-axis
+        rotation={[0,1.8, Math.PI / 2]} // Corrected rotation to ensure it stands straight facing front
+      />
     </mesh>
-    
-    // Attaching the ref to the primitive object to enable rotation
   );
 };
 
@@ -47,16 +46,16 @@ const RocketCanvas = () => {
         fov: 45,
         near: 0.1,
         far: 400,
-        position: [0, 1, 10], // Adjusted to move further back
+        position: [0, 1, 10], // Adjusted camera for full view
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
+        {/* OrbitControls with disabled rotation */}
         <OrbitControls
-          autoRotate
-          // autoRotateSpeed={0.5} // Speed of the orbit controls auto-rotate
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2} // Adjusted for better view control
-          minPolarAngle={0} // Allow full rotation
+          enableRotate={false} // Disables rotation
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={0}
         />
         {/* Adding lights to illuminate the scene */}
         <ambientLight intensity={0.5} />
