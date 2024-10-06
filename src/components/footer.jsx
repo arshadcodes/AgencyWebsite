@@ -8,10 +8,10 @@ const links = [
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-200  px-36">
+        <footer className="bg-gray-200  px-36 dark:text-white dark:bg-gray-900">
             <div className="grid grid-cols-2 gap-4 py-24 items-center">
                 <div>
-                    <img src="Logo-withoutBG.png" alt="logo" className="w-24" />
+                    <img src="Logo-withoutBG.png" alt="logo" className="w-24 dark:invert" />
                     <p className="text-lg pr-36">
                         We&#39;re a software agency on a mission to bridge a gap between Marketplace Businesses and Innovation through custom software and automations.
                     </p>

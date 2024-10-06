@@ -11,23 +11,25 @@ const steps = [
 
 const Step = ({ step, activeStep, index, progress }) => {
   return (
-    <div className={`flex ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}>
+    <div className={`flex ${index % 2 === 0 ? 'flex-row-reverse' : ''} dark:text-white`}>
       <div className="w-40 text-center">
-        <div className="p-4 bg-gray-200 rounded-md shadow-md">
+        <div className="p-4 bg-gray-200 rounded-md shadow-md dark:bg-gray-800">
           {step.text}
         </div>
       </div>
       <div className="flex flex-col items-center px-4">
         <div
           className={`flex items-center justify-center w-16 h-16 rounded-full border-[22px] 
-            transition duration-300 ${activeStep >= index ? 'border-black' : 'border-neutral-300'} 
+            transition duration-300 ${activeStep >= index ? 'border-black' : 'border-neutral-300'}
+            ${activeStep >= index ? 'dark:border-neutral-300' : 'dark:border-gray-800'}
+            } 
           `}
         >
         </div>
         {index !== steps.length - 1 &&
-          <div className="relative w-0.5 h-20 bg-neutral-300">
+          <div className="relative w-0.5 h-20 bg-neutral-300 dark:bg-gray-800">
             <div
-              className="absolute top-0 w-full bg-black"
+              className="absolute top-0 w-full bg-black dark:bg-white"
               style={{ height: `${progress}%` }}
             ></div>
           </div>}
@@ -72,8 +74,8 @@ const ScrollStepper = () => {
 
 
   return (
-    <div className='flex justify-center'>
-      <div className="flex flex-col">
+    <div className='flex justify-center '>
+      <div className="flex flex-col ">
         {steps.map((step, index) => (
           <div
             key={step.id}
@@ -91,12 +93,18 @@ const ScrollStepper = () => {
 const HowThingsWork = () => {
   return (
     <>
-      <div className="flex mt-36 mb-24 justify-center">
+      <div className="flex mt-36 mb-24 justify-center dark:text-white">
         <div className="text-7xl relative pr-24">
-          How Things Work
-          <img src="setting.png" className="absolute left-80 top-[-100px] w-64 z-[-1]" alt="setting" />
+          <div className='relative z-20'>How Things Work</div>
+          <img
+            src="setting.png"
+            className="absolute left-80 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
+            alt="setting"
+          />
         </div>
       </div>
+
+
       <ScrollStepper />
     </>
   );

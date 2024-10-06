@@ -12,7 +12,7 @@ const projects = [
 
 const OurWork = () => {
     return (
-        <div className="flex flex-col items-center justify-center mt-36">
+        <div className="flex flex-col items-center justify-center mt-36 dark:text-white">
             <div className="text-7xl relative">
                 Our Work
                 <img src="rocket.png" alt="rocket" className="absolute w-48 top-[-100px] left-36 z-[-1]" />
@@ -43,7 +43,7 @@ const OurWork = () => {
                     ))}
                 </div>
             </div>
-            <Button className="my-16" text="Book a call" onClick={() => { }} />
+            <Button className="my-16 dark:bg-gray-800" text="Book a call" onClick={() => { }} />
         </div>
     );
 };
