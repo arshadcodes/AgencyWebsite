@@ -19,11 +19,7 @@ const Navbar = () => {
       <div className='flex justify-end flex-1 gap-2'>
         <DarkModeToggle className='w-11 h-3' />
         <button
-          className='border border-black rounded-full px-4 py-2 shadow-xl font-thin dark:bg-slate-800 dark:text-white
-        transition duration-300
-             hover:bg-gray-200 dark:hover:bg-gray-700
-             hover:text-black dark:hover:text-gray-200
-             hover:border-gray-600 dark:hover:border-gray-400'>
+          className='border border-black rounded-full px-4 py-2 shadow-xl font-thin dark:bg-slate-800 dark:text-white'>
           Get a free estimate
         </button>
       </div>
