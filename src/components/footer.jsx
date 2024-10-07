@@ -3,7 +3,7 @@ const links = [
     { name: 'Process', url: '#' },
     { name: 'Work', url: '#' },
     { name: 'Testimonial', url: '#' },
-    { name: 'Contact', url: '#' },
+    { name: 'Contact', url: '/footer' },
 ]
 
 const Footer = () => {
