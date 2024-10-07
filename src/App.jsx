@@ -1,6 +1,6 @@
 import { div } from "framer-motion/client"
 import Footer from "./components/footer"
-import HowThingsWork from "./components/how things work"
+import HowThingsWork from "./components/how"
 import Main from "./components/main"
 import Navbar from "./components/navbar"
 import OurWork from "./components/our work"
