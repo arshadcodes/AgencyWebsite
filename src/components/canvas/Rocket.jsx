@@ -53,7 +53,7 @@ const RocketCanvas = () => {
         {/* OrbitControls with disabled rotation */}
         <OrbitControls
           enableZoom={false}
-          enableRotate={false} // Disables rotation
+          enableRotate={true} // Disables rotation
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={0}
         />
