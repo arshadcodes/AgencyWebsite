@@ -1,14 +1,5 @@
-import Button from "../ui/button";
-
-const projects = [
-    { name: "Project 1", image: "bw.webp" },
-    { name: "Project 2", image: "bw.webp" },
-    { name: "Project 3", image: "bw.webp" },
-    { name: "Project 3", image: "bw.webp" },
-    { name: "Project 3", image: "bw.webp" },
-    { name: "Project 3", image: "bw.webp" },
-    { name: "Project 3", image: "bw.webp" },
-];
+import Button from "../ui/Button";
+import { projects } from "./constants";
 
 const OurWork = () => {
     return (

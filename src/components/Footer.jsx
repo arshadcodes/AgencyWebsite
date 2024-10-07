@@ -1,10 +1,4 @@
-const links = [
-    { name: 'Services', url: '#' },
-    { name: 'Process', url: '#' },
-    { name: 'Work', url: '#' },
-    { name: 'Testimonial', url: '#' },
-    { name: 'Contact', url: '#' },
-]
+import { links } from "./constants";
 
 const Footer = () => {
     return (

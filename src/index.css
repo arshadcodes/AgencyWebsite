@@ -5,3 +5,18 @@
 body {
   @apply font-bebas;
 }
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-progress {
+  font-size: 14px;
+  color: #F1F1F1;
+  font-weight: 800;
+  margin-top: 40px;
+}

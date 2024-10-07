@@ -1,7 +1,7 @@
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import RocketCanvas from "./canvas/Rocket";
 
-const Main = () => {
+const Home = () => {
 
     return (
         <>
@@ -42,4 +42,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Home;

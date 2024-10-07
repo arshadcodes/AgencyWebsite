@@ -1,10 +1,5 @@
-const links = [
-    { name: "Services", href: "#" },
-    { name: "Process", href: "#" },
-    { name: "Testimonials", href: "#" },
-    { name: "Work", href: "#" },
-    { name: "Contact", href: "#" },
-]
+import { links } from "./constants";
+
 import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {

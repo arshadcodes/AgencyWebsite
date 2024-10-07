@@ -1,16 +1,16 @@
 import { div } from "framer-motion/client"
-import Footer from "./components/footer"
-import HowThingsWork from "./components/how things work"
-import Main from "./components/main"
+import Footer from "./components/Footer"
+import HowThingsWork from "./components/HowThingsWork"
+import Home from "./components/Home"
 import Navbar from "./components/Navbar"
-import OurWork from "./components/our work"
+import OurWork from "./components/OurWork"
 
 function App() {
 
   return (
     <div className="dark:bg-black">
       <Navbar />
-      <Main />
+      <Home />
       <HowThingsWork />
       <OurWork />
       <Footer />
