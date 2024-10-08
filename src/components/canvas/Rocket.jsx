@@ -46,7 +46,7 @@ const RocketCanvas = () => {
       camera={{
         fov: 45,
         near: 0.1,
-        far: 400,
+        far: 300,
         position: [0, 1, 10], // Adjusted to move further back
       }}
     >

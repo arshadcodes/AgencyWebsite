@@ -12,12 +12,12 @@ const projects = [
 
 const OurWork = () => {
     return (
-        <div className="flex flex-col items-center justify-center mt-36 dark:text-white">
+        <div className="flex flex-col items-center justify-center mt-36 dark:text-white w-screen overflow-x-hidden px-3">
             <div className="text-7xl relative">
                 Our Work
                 <img src="rocket.png" alt="rocket" className="absolute w-48 top-[-100px] left-36 z-[-1]" />
             </div>
-            <div className="mx-60 mt-10 space-y-4">
+            <div className="mt-10 space-y-4">
                 <div className="flex justify-center space-x-14">
                     {projects.slice(0, 2).map((project, index) => (
                         <div key={index} className="flex flex-col">

@@ -8,7 +8,7 @@ import OurWork from "./components/our work"
 function App() {
 
   return (
-    <div className="dark:bg-black">
+    <div className="dark:bg-black w-screen overflow-x-hidden">
       <Navbar />
       <Main />
       <HowThingsWork />

@@ -9,7 +9,7 @@ import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
         return (
-            <nav className="flex items-center justify-between px-10 py-4 shadow-md fixed w-full bg-white z-10 dark:bg-black dark:shadow-[#605f5f] dark:shadow-sm">
+            <nav className="flex mt-0 items-center justify-between px-10 py-4 shadow-md fixed w-full bg-white z-10 dark:bg-black dark:shadow-[#605f5f] dark:shadow-sm">
                 <div className="flex items-center flex-1">
                     <img src="logo.jpg" alt="Logo" className="w-16 dark:invert" />
                 </div>

@@ -11,8 +11,8 @@ const steps = [
 
 const Step = ({ step, activeStep, index, progress }) => {
   return (
-    <div className={`flex ${index % 2 === 0 ? 'flex-row-reverse' : ''} dark:text-white`}>
-      <div className="w-40 text-center">
+    <div className={`flex ${index % 2 === 0 ? 'flex-row-reverse' : ''} dark:text-white w-screen justify-center`}>
+      <div className="w-40 text-center px-3">
         <div className="p-4 bg-gray-200 rounded-md shadow-md dark:bg-gray-800">
           {step.text}
         </div>
@@ -75,17 +75,17 @@ const ScrollStepper = () => {
 
   return (
     <div className='flex justify-center '>
-      <div className="flex flex-col ">
-        {steps.map((step, index) => (
-          <div
-            key={step.id}
-            ref={el => stepRefs.current[index] = el}
-          >
-            <Step step={step} activeStep={activeStep} index={index}
-              progress={activeStep === index ? progress : activeStep > index ? 100 : 0} />
-          </div>
-        ))}
-      </div>
+        <div className="flex flex-col">
+          {steps.map((step, index) => (
+            <div
+              key={step.id}
+              ref={el => stepRefs.current[index] = el}
+            >
+              <Step step={step} activeStep={activeStep} index={index}
+                progress={activeStep === index ? progress : activeStep > index ? 100 : 0} />
+            </div>
+          ))}
+        </div>
     </div>
   );
 };
@@ -93,12 +93,12 @@ const ScrollStepper = () => {
 const HowThingsWork = () => {
   return (
     <>
-      <div className="flex mt-36 mb-24 justify-center dark:text-white">
-        <div className="text-7xl relative pr-24">
-          <div className='relative z-20'>How Things Work</div>
+      <div className="flex justify-center dark:text-white w-screen items-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center text-7xl relative w-screen">
+          <div className='relative z-20 text-center'>How Things Work</div>
           <img
             src="setting.png"
-            className="absolute left-80 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
+            className=" left-80 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
             alt="setting"
           />
         </div>
