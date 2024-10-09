@@ -19,7 +19,6 @@ body {
   font-weight: 800;
   margin-top: 40px;
 }
-
 /* Selection color changes */
 ::selection {
   background-color: black;
@@ -30,5 +29,4 @@ body {
 .dark ::selection {
   background-color: white;
   color: black;
-
 }
