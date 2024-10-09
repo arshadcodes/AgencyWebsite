@@ -1,0 +1,17 @@
+/* The hover underline effect */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }

@@ -5,3 +5,15 @@
 body {
   @apply font-bebas;
 }
+
+/* Selection color changes */
+::selection {
+  background-color: black;
+  color: white;
+}
+
+/* Dark Mode Selection Color */
+.dark ::selection {
+  background-color: white;
+  color: black;
+}
