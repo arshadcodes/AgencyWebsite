@@ -72,6 +72,11 @@ Provide a detailed description of the changes made in this pull request, includi
 - **Why** these changes were necessary (e.g., user feedback, design updates).
 - **How** the changes were implemented (e.g., specific technologies or methods used).
 
+## Files Changed
+Example:
+- `README.md`
+- `CONTRIBUTING.md`
+
 ### Checklist
 Please ensure that the following tasks are completed before submitting your pull request:
 
