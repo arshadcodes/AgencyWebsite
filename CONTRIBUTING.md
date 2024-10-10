@@ -14,14 +14,14 @@ Click the "Fork" button at the top right of this page to make your own copy of t
 
 Clone the forked repository to your local machine:
 ```bash
-git clone https://github.com/<your-github-username>/Geet.git
+git clone https://github.com/<your-github-username>/AgencyWebsite.git
 ```
 
 ### 3. Navigate to the Project Directory
 Use the following command to enter the project folder:
 
 ``` bash
-cd geet
+cd AgencyWebsite
 ```
 
 ### 4. Create a New Branch
@@ -100,7 +100,7 @@ To stay up-to-date with the latest changes in the main repository, you’ll need
 - Add the original repository as a remote:
 
 ```bash
-git remote add upstream https://github.com/divyanshudhruv/Geet.git
+git remote add upstream https://github.com/arshadcodes/AgencyWebsite.git
 ```
 
 - Fetch the latest changes:
