@@ -6,7 +6,7 @@
 
 A visually striking **agency website** built with **React**, **Vite**, and enhanced with **3D elements**, designed for modern digital agencies.
 
-<br>
+---
 
 ## 🎉 Hacktoberfest 2024
 
@@ -19,7 +19,9 @@ This project is participating in **Hacktoberfest 2024**! Contributions are welco
 - **Improve Documentation**: Contributions to this README, the project docs, or any other documentation are very welcome.
 - **Refactor Code**: Make the code cleaner, faster, or more efficient.
 
-<br>
+---
+
+---
 
 ## 🚀 Tech Stack
 
@@ -32,7 +34,7 @@ This project is participating in **Hacktoberfest 2024**! Contributions are welco
 | **HTML5 & CSS3**     | Structure and styling                       |
 | **Node.js & NPM**    | Backend tooling and package management      |
 
-<br>
+---
 
 ## ⚙️ Getting Started
 
@@ -69,7 +71,7 @@ To get a local copy up and running, follow these simple steps:
 6. **Access the project**:
     Open your browser and navigate to `http://localhost:3000`
 
-<br>
+---
 
 ## 🛠 Features
 
@@ -78,7 +80,7 @@ To get a local copy up and running, follow these simple steps:
 - **Modular Architecture**: Well-structured codebase for easy customization and scalability.
 - **Animations & Effects**: Visual enhancements to make the website stand out.
 
-<br>
+---
 
 ## 🎯 Hacktoberfest Contribution Guidelines
 
@@ -104,7 +106,7 @@ For more details on how to contribute, please check out our [**CONTRIBUTING.md**
 
 We will review your PR and provide feedback if necessary.
 
-<br>
+---
 
 ## 👥 Meet the Mentor
 
@@ -112,7 +114,7 @@ We will review your PR and provide feedback if necessary.
   **GitHub**: [@arshadcodes](https://github.com/arshadcodes)  
   Passionate about modern web development, open source, and mentoring new developers.
 
-<br><br>
+---
 
 ## 🤝 Join the Hacktoberfest Community
 
@@ -125,3 +127,4 @@ We will review your PR and provide feedback if necessary.
 
 **Happy Hacking! 🎃**
 
+---
