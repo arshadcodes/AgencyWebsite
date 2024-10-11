@@ -30,22 +30,12 @@ const OurWork = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-36 dark:text-white">
       <div className="text-7xl relative">
-        <motion.div
-          className="text-7xl relative"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Our Work
-          <motion.img
-            src="/rocket.png"
-            alt="Animated rocket"
-            className="absolute w-48 top-[-100px] left-36 z-[-1]"
-            variants={rocketVariants}
-            initial="initial"
-            animate="animate"
-          />
-        </motion.div>
+        Our Work
+        <img
+          src="rocket.png"
+          alt="rocket"
+          className="absolute w-48 top-[-100px] left-36 z-[-1]"
+        />
       </div>
       <div className="mx-60 mt-10 space-y-4">
         <div className="flex justify-center space-x-14">
