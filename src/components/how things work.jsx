@@ -95,10 +95,10 @@ const HowThingsWork = () => {
     <>
       <div className="flex mt-36 mb-24 justify-center dark:text-white">
         <div className="text-7xl relative pr-24">
-          <div className='relative z-20'>How Things Work</div>
+          <div className='relative '>How Things Work</div>
           <img
             src="setting.png"
-            className="absolute left-80 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
+            className="absolute left-96 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
             alt="setting"
           />
         </div>
