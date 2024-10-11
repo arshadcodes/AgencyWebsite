@@ -4,6 +4,7 @@ import HowThingsWork from "./components/how things work"
 import Main from "./components/main"
 import Navbar from "./components/Navbar"
 import OurWork from "./components/our work"
+import Testimonial from "./components/Testimonial"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <HowThingsWork />
       <OurWork />
+      <Testimonial />
       <Footer />
     </div>
   )

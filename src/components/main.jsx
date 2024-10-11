@@ -10,9 +10,8 @@ const Main = () => {
                     Building the future of your brand <br />
                     From development to deployment, we turn your ideas into reality, guaranteed
                 </div>
-                <Button className="dark:bg-gray-800" text="Book a call" onClick={() => { }} />
+                <Button className="dark:bg-gray-800 hover:bg-gray-700 hover:scale-105 transition-transform duration-300" text="Book a call" onClick={() => { }} />
             </div>
-
 
             <div className="flex justify-center mt-10 dark:text-white">
                 <div className="w-[700px] h-[700px] rounded-full bg-[radial-gradient(closest-side,_rgba(0,0,0,0.5),_rgba(255,255,255,1))] relative">

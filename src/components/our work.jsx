@@ -20,25 +20,31 @@ const OurWork = () => {
             <div className="mx-60 mt-10 space-y-4">
                 <div className="flex justify-center space-x-14">
                     {projects.slice(0, 2).map((project, index) => (
-                        <div key={index} className="flex flex-col">
-                            <img src={project.image} alt={project.name} className="w-64" />
-                            <p className="text-lg">{project.name}</p>
+                        <div
+                            key={index}
+                            className="flex flex-col items-center rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+                            <img src={project.image} alt={project.name} className="w-64 h-64 object-cover" />
+                            <p className="text-lg mt-4">{project.name}</p>
                         </div>
                     ))}
                 </div>
                 <div className="flex justify-center space-x-14">
                     {projects.slice(2, 5).map((project, index) => (
-                        <div key={index} className="flex flex-col">
-                            <img src={project.image} alt={project.name} className="w-64" />
-                            <p className="text-lg">{project.name}</p>
+                        <div
+                            key={index}
+                            className="flex flex-col items-center rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+                            <img src={project.image} alt={project.name} className="w-64 h-64 object-cover" />
+                            <p className="text-lg mt-4">{project.name}</p>
                         </div>
                     ))}
                 </div>
                 <div className="flex justify-center space-x-14">
                     {projects.slice(5, 7).map((project, index) => (
-                        <div key={index} className="flex flex-col">
-                            <img src={project.image} alt={project.name} className="w-64" />
-                            <p className="text-lg">{project.name}</p>
+                        <div
+                            key={index}
+                            className="flex flex-col items-center rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+                            <img src={project.image} alt={project.name} className="w-64 h-64 object-cover" />
+                            <p className="text-lg mt-4">{project.name}</p>
                         </div>
                     ))}
                 </div>
