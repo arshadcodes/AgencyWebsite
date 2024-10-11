@@ -1,0 +1,58 @@
+.howthingswork-title {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0.48);
+    will-change: opacity, transform;
+}
+
+.howthingswork-title.visible {
+    animation: titlepopup 512ms ease forwards;
+}
+
+@keyframes titlepopup {
+    80% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.progress-bar {
+    height: 0%;
+    will-change: height;
+    animation: progressbar linear forwards;
+    animation-timeline: view(block);
+    animation-range: entry-crossing calc(0% + 80px) exit-crossing calc(0% - 100svh + 160px);
+}
+
+@keyframes progressbar {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+.step-text{
+    opacity: 0;
+    transition: opacity 128ms ease , transform 512ms ease;
+}
+.step-right{
+    transform: translateX(100%);
+}
+.step-right.visible{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.step-left{
+    transform: translateX(-100%);
+}
+.step-left.visible{
+    opacity: 1;
+    transform: translateX(0%);
+}
