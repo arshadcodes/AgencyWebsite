@@ -1,9 +1,9 @@
 import { div } from "framer-motion/client"
-import Footer from "./components/footer"
-import HowThingsWork from "./components/how things work"
+import Footer from "./components/Footer"
+import HowThingsWork from "./components/HowThingsWork"
 import Main from "./components/main"
 import Navbar from "./components/Navbar"
-import OurWork from "./components/our work"
+import OurWork from "./components/Work"
 
 function App() {
 
