@@ -1,22 +1,17 @@
-import { useRef, useEffect, useState } from "react";
-import propTypes from "prop-types";
-import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from 'react';
+import propTypes from 'prop-types';
 
 const steps = [
   { id: 1, text: "Step 1: Understanding the basics" },
   { id: 2, text: "Step 2: Setting up the environment" },
   { id: 3, text: "Step 3: Writing your first code" },
   { id: 4, text: "Step 4: Testing and debugging" },
-  { id: 5, text: "Step 5: Deployment" },
+  { id: 5, text: "Step 5: Deployment" }
 ];
 
 const Step = ({ step, activeStep, index, progress }) => {
   return (
-    <div
-      className={`flex ${
-        index % 2 === 0 ? "flex-row-reverse" : ""
-      } dark:text-white`}
-    >
+    <div className={`flex ${index % 2 === 0 ? 'flex-row-reverse' : ''} dark:text-white`}>
       <div className="w-40 text-center">
         <div className="p-4 bg-gray-200 rounded-md shadow-md dark:bg-gray-800">
           {step.text}
@@ -25,32 +20,28 @@ const Step = ({ step, activeStep, index, progress }) => {
       <div className="flex flex-col items-center px-4">
         <div
           className={`flex items-center justify-center w-16 h-16 rounded-full border-[22px] 
-            transition duration-300 ${
-              activeStep >= index ? "border-black" : "border-neutral-300"
-            }
-            ${
-              activeStep >= index
-                ? "dark:border-neutral-300"
-                : "dark:border-gray-800"
-            }
+            transition duration-300 ${activeStep >= index ? 'border-black' : 'border-neutral-300'}
+            ${activeStep >= index ? 'dark:border-neutral-300' : 'dark:border-gray-800'}
             } 
           `}
-        ></div>
-        {index !== steps.length - 1 && (
+        >
+        </div>
+        {index !== steps.length - 1 &&
           <div className="relative w-0.5 h-20 bg-neutral-300 dark:bg-gray-800">
             <div
               className="absolute top-0 w-full bg-black dark:bg-white"
               style={{ height: `${progress}%` }}
             ></div>
-          </div>
-        )}
+          </div>}
       </div>
-      <div className="w-40"></div>
+      <div className='w-40'>
+      </div>
     </div>
   );
 };
 
 const ScrollStepper = () => {
+
   const stepRefs = useRef([]);
   const [activeStep, setActiveStep] = useState(-1);
   const [progress, setProgress] = useState(0);
@@ -69,30 +60,29 @@ const ScrollStepper = () => {
           } else {
             setProgress(100);
           }
-        } else if (index === 0) {
+        }
+        else if (index === 0) {
           setActiveStep(-1);
           setProgress(0);
         }
       });
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   return (
-    <div className="flex justify-center ">
+    <div className='flex justify-center '>
       <div className="flex flex-col ">
         {steps.map((step, index) => (
-          <div key={step.id} ref={(el) => (stepRefs.current[index] = el)}>
-            <Step
-              step={step}
-              activeStep={activeStep}
-              index={index}
-              progress={
-                activeStep === index ? progress : activeStep > index ? 100 : 0
-              }
-            />
+          <div
+            key={step.id}
+            ref={el => stepRefs.current[index] = el}
+          >
+            <Step step={step} activeStep={activeStep} index={index}
+              progress={activeStep === index ? progress : activeStep > index ? 100 : 0} />
           </div>
         ))}
       </div>
@@ -105,36 +95,15 @@ const HowThingsWork = () => {
     <>
       <div className="flex mt-36 mb-24 justify-center dark:text-white">
         <div className="text-7xl relative pr-24">
-
-          <motion.div
-            className="relative "
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            How Things Work
-          </motion.div>
-          <motion.div
-            className="absolute left-80 top-[-100px]"
-            initial={{ opacity: 0, rotate: 0 }}
-            animate={{ opacity: 1, rotate: 360 }}
-            transition={{
-              opacity: { duration: 0.5 },
-              rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-            }}
-          >
-            <img
-              src="setting.png"
-              width={256}
-              height={256}
-              className="w-64 dark:opacity-75 dark:brightness-125"
-              alt="setting"
-            />
-          </motion.div>
-
+          <div className='relative z-20'>How Things Work</div>
+          <img
+            src="setting.png"
+            className="absolute left-80 top-[-100px] w-64 dark:opacity-75 dark:brightness-125"
+            alt="setting"
+          />
         </div>
       </div>
+
 
       <ScrollStepper />
     </>
@@ -145,7 +114,7 @@ Step.propTypes = {
   step: propTypes.object.isRequired,
   activeStep: propTypes.number.isRequired,
   index: propTypes.number.isRequired,
-  progress: propTypes.number.isRequired,
+  progress: propTypes.number.isRequired
 };
 
 export default HowThingsWork;
