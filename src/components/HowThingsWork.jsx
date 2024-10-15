@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import propTypes from "prop-types";
-import { InView } from "react-intersection-observer";
 
+import { InView } from "react-intersection-observer";
 import "./anim/how-things-work.css";
 
 const steps = [
@@ -10,11 +10,6 @@ const steps = [
   { id: 3, text: "Step 3: Writing your first code" },
   { id: 4, text: "Step 4: Testing and debugging" },
   { id: 5, text: "Step 5: Deployment" },
-];
-
-const customSteps = [
-  { id: 1, text: "Step 1: Understanding the basics" },
-  { id: 2, text: "Step 2: Setting up the environment" },
 ];
 
 const Step = ({ step, activeStep, index, progress }) => {
@@ -55,9 +50,7 @@ const Step = ({ step, activeStep, index, progress }) => {
         </InView>
         {index !== steps.length - 1 && (
           <div className="relative w-0.5 h-20 bg-transparent">
-            <div
-              className="absolute top-0 w-full bg-black dark:bg-white progress-bar"
-            ></div>
+            <div className="absolute top-0 w-full bg-black dark:bg-white progress-bar"></div>
           </div>
         )}
       </div>

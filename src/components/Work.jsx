@@ -1,6 +1,6 @@
 import Button from "../ui/button";
-import { InView } from "react-intersection-observer";
 
+import { InView } from "react-intersection-observer";
 import "./anim/our-work.css";
 
 const projects = [
