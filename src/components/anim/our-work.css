@@ -1,0 +1,58 @@
+.ourwork-title {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0.48);
+}
+
+.ourwork-title.visible {
+    animation: titlepopup 512ms ease forwards;
+}
+
+@keyframes titlepopup {
+    80% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.project-img {
+    transform-origin: 50% 100%;
+    animation: showprojectsimg linear forwards;
+    animation-timeline: view(block);
+    animation-range: entry-crossing 0% entry-crossing 100%;
+}
+
+@keyframes showprojectsimg {
+    0% {
+        filter: blur(8px);
+        transform: scale(0.12);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+.project-name {
+    animation: showprojectsname linear forwards;
+    animation-timeline: view(block);
+    animation-range: entry-crossing 0% entry-crossing 200%;
+}
+
+@keyframes showprojectsname {
+    0% {
+        opacity: 0;
+        /* clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);  */
+    }
+
+    100% {
+        opacity: 1;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+    }
+}
