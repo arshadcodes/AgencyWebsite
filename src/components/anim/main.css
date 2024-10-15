@@ -16,30 +16,36 @@
         transform: rotate(60deg);
     }
 }
-.whoarewe{
+
+.whoarewe {
     opacity: 0;
     transform: translateX(-50%);
     transition: opacity 128ms ease, transform 512ms ease;
 }
-.whoarewe.visible{
+
+.whoarewe.visible {
     opacity: 1;
     transform: translateX(0%);
 }
-.whoarewedesc{
+
+.whoarewedesc {
     opacity: 0;
     transform: translateX(50%);
     transition: opacity 128ms ease, transform 512ms ease;
 }
-.whoarewedesc.visible{
+
+.whoarewedesc.visible {
     opacity: 1;
     transform: translateX(0%);
 }
-.meettheteam{
+
+.meettheteam {
     opacity: 0;
     transform: translateX(50%);
     transition: opacity 128ms ease, transform 512ms ease;
 }
-.meettheteam.visible{
+
+.meettheteam.visible {
     opacity: 1;
     transform: translateX(0%);
 }

@@ -38,21 +38,26 @@
         height: 100%;
     }
 }
-.step-text{
+
+.step-text {
     opacity: 0;
-    transition: opacity 128ms ease , transform 512ms ease;
+    transition: opacity 128ms ease, transform 512ms ease;
 }
-.step-right{
+
+.step-right {
     transform: translateX(100%);
 }
-.step-right.visible{
+
+.step-right.visible {
     opacity: 1;
     transform: translateX(0%);
 }
-.step-left{
+
+.step-left {
     transform: translateX(-100%);
 }
-.step-left.visible{
+
+.step-left.visible {
     opacity: 1;
     transform: translateX(0%);
 }
