@@ -36,6 +36,21 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+        <div>
+          <div>
+            Book a free consultation
+          </div>
+          <div>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="border border-gray-400 p-2 w-64 mt-2"
+            />
+            <button className="bg-blue-500 text-white px-4 py-2 mt-2">
+              Submit
+            </button>
+        </div>
+      </div>
       </div>
       <div className="flex flex-col sm:flex-row justify-between pb-4">
         <div>All rights reserved to Egma</div>
