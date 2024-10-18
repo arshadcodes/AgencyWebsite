@@ -13,31 +13,27 @@ const steps = [
 const Step = ({ step, activeStep, index, progress }) => {
   return (
     <div
-      className={`flex ${
-        index % 2 === 0 ? "flex-row-reverse" : ""
+      className={`flex flex-col md:flex-row ${
+        index % 2 === 0 ? "md:flex-row-reverse" : ""
       } dark:text-white`}
     >
-      <div className="w-40 text-center">
+      <div className="w-full md:w-40 text-center">
         <div className="p-4 bg-gray-200 rounded-md shadow-md dark:bg-gray-800">
           {step.text}
         </div>
       </div>
       <div className="flex flex-col items-center px-4">
         <div
-          className={`flex items-center justify-center w-16 h-16 rounded-full border-[22px] 
-            transition duration-300 ${
-              activeStep >= index ? "border-black" : "border-neutral-300"
-            }
-            ${
-              activeStep >= index
-                ? "dark:border-neutral-300"
-                : "dark:border-gray-800"
-            }
-            } 
-          `}
+          className={`flex items-center justify-center w-16 h-16 rounded-full border-[16px] md:border-[22px] transition duration-300 ${
+            activeStep >= index ? "border-black" : "border-neutral-300"
+          } ${
+            activeStep >= index
+              ? "dark:border-neutral-300"
+              : "dark:border-gray-800"
+          }`}
         ></div>
         {index !== steps.length - 1 && (
-          <div className="relative w-0.5 h-20 bg-neutral-300 dark:bg-gray-800">
+          <div className="relative w-0.5 h-10 md:h-20 bg-neutral-300 dark:bg-gray-800">
             <div
               className="absolute top-0 w-full bg-black dark:bg-white"
               style={{ height: `${progress}%` }}
@@ -45,7 +41,7 @@ const Step = ({ step, activeStep, index, progress }) => {
           </div>
         )}
       </div>
-      <div className="w-40"></div>
+      <div className="w-full md:w-40"></div>
     </div>
   );
 };
@@ -81,8 +77,8 @@ const ScrollStepper = () => {
   }, []);
 
   return (
-    <div className="flex justify-center ">
-      <div className="flex flex-col ">
+    <div className="flex justify-center px-4">
+      <div className="flex flex-col w-full max-w-md">
         {steps.map((step, index) => (
           <div key={step.id} ref={(el) => (stepRefs.current[index] = el)}>
             <Step
@@ -103,8 +99,8 @@ const ScrollStepper = () => {
 const HowThingsWork = () => {
   return (
     <>
-      <div className="flex mt-36 mb-24 justify-center dark:text-white">
-        <div className="text-7xl relative pr-24">
+<div className="flex mt-36 mb-24 justify-center px-4 text-center dark:text-white">
+    <div className="text-3xl md:text-7xl relative pr-24">
 
           <motion.div
             className="relative "
@@ -116,7 +112,7 @@ const HowThingsWork = () => {
             How Things Work
           </motion.div>
           <motion.div
-            className="absolute left-80 top-[-100px]"
+            className="absolute left-1/2 md:left-80 top-[-50px] md:top-[-100px] transform -translate-x-1/2"
             initial={{ opacity: 0, rotate: 0 }}
             animate={{ opacity: 1, rotate: 360 }}
             transition={{
@@ -126,9 +122,9 @@ const HowThingsWork = () => {
           >
             <img
               src="setting.png"
-              width={256}
-              height={256}
-              className="w-64 dark:opacity-75 dark:brightness-125"
+              width={128}
+              height={128}
+              className="w-32 md:w-64 dark:opacity-75 dark:brightness-125"
               alt="setting"
             />
           </motion.div>

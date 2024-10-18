@@ -5,10 +5,10 @@ const projects = [
   { name: "Project 1", image: "bw.webp" },
   { name: "Project 2", image: "bw.webp" },
   { name: "Project 3", image: "bw.webp" },
-  { name: "Project 3", image: "bw.webp" },
-  { name: "Project 3", image: "bw.webp" },
-  { name: "Project 3", image: "bw.webp" },
-  { name: "Project 3", image: "bw.webp" },
+  { name: "Project 4", image: "bw.webp" },
+  { name: "Project 5", image: "bw.webp" },
+  { name: "Project 6", image: "bw.webp" },
+  { name: "Project 7", image: "bw.webp" },
 ];
 
 const rocketVariants = {
@@ -28,43 +28,38 @@ const rocketVariants = {
 
 const OurWork = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-36 dark:text-white">
-      <div className="text-7xl relative">
+    <div className="flex flex-col items-center justify-center mt-16 md:mt-36 dark:text-white">
+      {/* Title and Floating Rocket */}
+      <div className="text-4xl md:text-7xl relative text-center">
         Our Work
-        <img
+        <motion.img
+          variants={rocketVariants}
+          initial="initial"
+          animate="animate"
           src="rocket.png"
           alt="rocket"
-          className="absolute w-48 top-[-100px] left-36 z-[-1]"
+          className="absolute w-24 md:w-48 top-[-50px] md:top-[-100px] left-1/2 transform -translate-x-1/2 z-[-1]"
         />
       </div>
-      <div className="mx-60 mt-10 space-y-4">
-        <div className="flex justify-center space-x-14">
-          {projects.slice(0, 2).map((project, index) => (
-            <div key={index} className="flex flex-col">
-              <img src={project.image} alt={project.name} className="w-64" />
-              <p className="text-lg">{project.name}</p>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center space-x-14">
-          {projects.slice(2, 5).map((project, index) => (
-            <div key={index} className="flex flex-col">
-              <img src={project.image} alt={project.name} className="w-64" />
-              <p className="text-lg">{project.name}</p>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center space-x-14">
-          {projects.slice(5, 7).map((project, index) => (
-            <div key={index} className="flex flex-col">
-              <img src={project.image} alt={project.name} className="w-64" />
-              <p className="text-lg">{project.name}</p>
-            </div>
-          ))}
-        </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 md:mx-20 lg:mx-40 mt-10">
+        {projects.map((project, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={project.image}
+              alt={project.name}
+              className="w-full md:w-64 object-cover"
+            />
+            <p className="text-base md:text-lg mt-4">{project.name}</p>
+          </div>
+        ))}
       </div>
-      {/* <Button
-        className="my-16 dark:bg-gray-800"
+{/* Call to Action Button */}
+<Button
+  className="my-16 md:my-16 dark:bg-gray-800"  // Adjusted to use both my-10 and my-16
+>
+
         text="Book a call"
         onClick={() => {}}
       /> */}

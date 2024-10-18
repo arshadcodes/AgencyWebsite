@@ -15,3 +15,35 @@
   .nav-item:hover::after {
     transform: scaleX(1);
   }
+
+/* Navbar.css */
+
+/* Ensure all elements respect padding and borders */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Mobile menu adjustments */
+nav {
+  width: 100%;
+}
+
+/* Ensure links and buttons fit nicely on all screens */
+nav a, nav button {
+  width: 100%; /* Full width inside the mobile menu */
+  text-align: center;
+  padding: 12px 0;
+}
+/* Navbar.css */
+.navbar {
+  margin-bottom: 120px; /* Adjust this value to your liking */
+}
+.navbar {
+  position: relative; /* or fixed depending on your layout */
+  z-index: 10; /* Ensure it's higher than the rocket's z-index */
+}
