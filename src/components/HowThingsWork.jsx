@@ -12,7 +12,7 @@ const steps = [
   { id: 5, text: "Step 5: Deployment" },
 ];
 
-const Step = ({ step, activeStep, index, progress }) => {
+const Step = ({ step, index }) => {
   return (
     <div
       className={`flex ${
