@@ -99,10 +99,11 @@ const ScrollStepper = () => {
 const HowThingsWork = () => {
   return (
     <>
-      <div className="flex mt-20 mb-12 justify-center px-4 text-center dark:text-white">
-        <div className="text-3xl md:text-7xl relative">
+<div className="flex mt-36 mb-24 justify-center px-4 text-center dark:text-white">
+    <div className="text-3xl md:text-7xl relative pr-24">
+
           <motion.div
-            className="relative z-20"
+            className="relative "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -127,6 +128,7 @@ const HowThingsWork = () => {
               alt="setting"
             />
           </motion.div>
+
         </div>
       </div>
 
