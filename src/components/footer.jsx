@@ -1,3 +1,5 @@
+import FAQ from "./FAQ";
+
 const links = [
   { name: "Services", url: "#" },
   { name: "Process", url: "#" },
@@ -8,6 +10,8 @@ const links = [
 
 const Footer = () => {
   return (
+    <>
+    <FAQ/>
     <footer className="bg-gray-200 px-8 sm:px-12 md:px-36 dark:text-white dark:bg-gray-900">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-16 items-center">
         <div>
@@ -47,6 +51,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
