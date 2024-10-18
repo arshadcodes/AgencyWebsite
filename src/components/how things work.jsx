@@ -105,8 +105,9 @@ const HowThingsWork = () => {
     <>
       <div className="flex mt-36 mb-24 justify-center dark:text-white">
         <div className="text-7xl relative pr-24">
+
           <motion.div
-            className="relative z-20"
+            className="relative "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -131,6 +132,7 @@ const HowThingsWork = () => {
               alt="setting"
             />
           </motion.div>
+
         </div>
       </div>
 
